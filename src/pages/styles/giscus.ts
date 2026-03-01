@@ -7,6 +7,7 @@ export const GET: APIRoute = async () => {
 	return new Response(css, {
 		headers: {
 			'Content-Type': 'text/css',
+			'Access-Control-Allow-Origin': '*',
 		},
 	});
 };
