@@ -78,7 +78,7 @@ src/
 ### Prerequisites
 
 - **Node.js** 20+
-- **pnpm** 8+ ([install](https://pnpm.io/installation))
+- **pnpm** 10+ ([install](https://pnpm.io/installation))
 
 ### Installation
 
