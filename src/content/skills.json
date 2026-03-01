@@ -1,0 +1,20 @@
+[
+	{ "id": 1, "icon": { "type": "simple-icons", "name": "node.js" }, "text": "Node.js" },
+	{ "id": 2, "icon": { "type": "simple-icons", "name": "typescript" }, "text": "TypeScript" },
+	{ "id": 3, "icon": { "type": "simple-icons", "name": "javascript" }, "text": "JavaScript" },
+	{ "id": 4, "icon": { "type": "simple-icons", "name": "astro" }, "text": "Astro" },
+	{ "id": 5, "icon": { "type": "simple-icons", "name": "react" }, "text": "React" },
+	{ "id": 6, "icon": { "type": "simple-icons", "name": "next.js" }, "text": "Next.js" },
+	{ "id": 7, "icon": { "type": "simple-icons", "name": "php" }, "text": "PHP" },
+	{ "id": 8, "icon": { "type": "simple-icons", "name": "laravel" }, "text": "Laravel" },
+	{ "id": 9, "icon": { "type": "simple-icons", "name": "magento" }, "text": "Magento" },
+	{ "id": 10, "icon": { "type": "simple-icons", "name": "wordpress" }, "text": "WordPress" },
+	{ "id": 11, "icon": { "type": "simple-icons", "name": "rust" }, "text": "Rust" },
+	{ "id": 12, "icon": { "type": "simple-icons", "name": "python" }, "text": "Python" },
+	{ "id": 13, "icon": { "type": "simple-icons", "name": "django" }, "text": "Django" },
+	{ "id": 14, "icon": { "type": "simple-icons", "name": "sql" }, "text": "SQL" },
+	{ "id": 15, "icon": { "type": "simple-icons", "name": "postgresql" }, "text": "PostgreSQL" },
+	{ "id": 16, "icon": { "type": "simple-icons", "name": "docker" }, "text": "Docker" },
+	{ "id": 17, "icon": { "type": "simple-icons", "name": "podman" }, "text": "Podman" },
+	{ "id": 18, "icon": { "type": "simple-icons", "name": "linux" }, "text": "Linux" }
+]

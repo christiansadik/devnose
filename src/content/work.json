@@ -1,9 +1,23 @@
 [
 	{
 		"id": 1,
-		"duration": "2024 - present",
-		"company": "Astro Community",
-		"title": "Astro Theme",
-		"description": "Existing as an Astro theme for anyone to use."
+		"duration": "2019 - 2021",
+		"company": "Placeholder Corp",
+		"title": "Junior Web Developer",
+		"description": "Built and maintained web applications using modern JavaScript frameworks. Collaborated with design teams to deliver responsive UIs."
+	},
+	{
+		"id": 2,
+		"duration": "2021 - 2023",
+		"company": "Placeholder Agency",
+		"title": "Mid-level Web Developer",
+		"description": "Led frontend development for client projects. Implemented CI/CD pipelines and improved team workflows."
+	},
+	{
+		"id": 3,
+		"duration": "2023 - present",
+		"company": "Placeholder Studio",
+		"title": "Senior Web Developer",
+		"description": "Architecting full-stack web solutions. Mentoring junior developers and driving technical decisions."
 	}
 ]

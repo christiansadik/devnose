@@ -1,27 +1,13 @@
 import mdx from '@astrojs/mdx';
-import node from '@astrojs/node';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 import expressiveCode from 'astro-expressive-code';
-import { loadEnv } from 'vite';
-import spectre, { type GiscusMapping } from './package/src';
+import spectre from './package/src';
 import { spectreDark } from './src/ec-theme';
-
-const {
-	GISCUS_REPO,
-	GISCUS_REPO_ID,
-	GISCUS_CATEGORY,
-	GISCUS_CATEGORY_ID,
-	GISCUS_MAPPING,
-	GISCUS_STRICT,
-	GISCUS_REACTIONS_ENABLED,
-	GISCUS_EMIT_METADATA,
-	GISCUS_LANG,
-} = loadEnv(process.env.NODE_ENV!, process.cwd(), '');
 
 // https://astro.build/config
 const config = defineConfig({
-	site: 'https://spectre.lou.gg',
+	site: 'https://christiansadik.dev',
 	output: 'static',
 	integrations: [
 		expressiveCode({
@@ -30,36 +16,23 @@ const config = defineConfig({
 		mdx(),
 		sitemap(),
 		spectre({
-			name: 'Spectre',
+			name: 'devnose',
 			openGraph: {
 				home: {
-					title: 'Spectre',
-					description: 'A minimalistic theme for Astro.',
+					title: 'devnose — Christian Sadik',
+					description:
+						'Web developer portfolio and digital garden. Code, books, productivity, tools and more.',
 				},
 				blog: {
-					title: 'Blog',
-					description: 'News and guides for Spectre.',
+					title: 'Blog — devnose',
+					description: 'Articles about code, books, productivity, tools and more.',
 				},
 				projects: {
-					title: 'Projects',
+					title: 'Projects — devnose',
 				},
-			},
-			giscus: {
-				repository: GISCUS_REPO,
-				repositoryId: GISCUS_REPO_ID,
-				category: GISCUS_CATEGORY,
-				categoryId: GISCUS_CATEGORY_ID,
-				mapping: GISCUS_MAPPING as GiscusMapping,
-				strict: GISCUS_STRICT === 'true',
-				reactionsEnabled: GISCUS_REACTIONS_ENABLED === 'true',
-				emitMetadata: GISCUS_EMIT_METADATA === 'true',
-				lang: GISCUS_LANG,
 			},
 		}),
 	],
-	adapter: node({
-		mode: 'standalone',
-	}),
 });
 
 export default config;
