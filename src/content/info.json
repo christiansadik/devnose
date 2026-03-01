@@ -3,17 +3,24 @@
 		"id": 1,
 		"icon": {
 			"type": "lucide",
-			"name": "cake"
+			"name": "code"
 		},
-		"text": "1 year old"
+		"text": "Web Developer"
 	},
 	{
 		"id": 2,
 		"icon": {
 			"type": "lucide",
-			"name": "earth"
+			"name": "map-pin"
 		},
-		"type": "lucide",
-		"text": "Made in Germany"
+		"text": "Italy"
+	},
+	{
+		"id": 3,
+		"icon": {
+			"type": "lucide",
+			"name": "briefcase"
+		},
+		"text": "5+ years experience"
 	}
 ]

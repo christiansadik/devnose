@@ -6,6 +6,24 @@
 			"name": "github"
 		},
 		"text": "GitHub",
-		"link": "https://github.com/louisescher/spectre"
+		"link": "https://github.com/placeholder-christian"
+	},
+	{
+		"id": 2,
+		"icon": {
+			"type": "simple-icons",
+			"name": "linkedin"
+		},
+		"text": "LinkedIn",
+		"link": "https://linkedin.com/in/placeholder-christian"
+	},
+	{
+		"id": 3,
+		"icon": {
+			"type": "simple-icons",
+			"name": "x"
+		},
+		"text": "X / Twitter",
+		"link": "https://x.com/placeholder-christian"
 	}
 ]

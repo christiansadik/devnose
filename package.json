@@ -1,21 +1,21 @@
 {
-	"name": "spectre",
+	"name": "devnose",
 	"type": "module",
-	"version": "1.0.2",
+	"version": "0.1.0",
+	"description": "Personal portfolio and digital garden — christiansadik.dev",
+	"author": "Christian Sadik",
 	"packageManager": "pnpm@10.27.0",
 	"scripts": {
 		"dev": "astro dev",
 		"build": "astro build",
-		"start": "node dist/server/entry.mjs",
 		"preview": "astro preview",
 		"astro": "astro",
-		"postbuild": "pagefind --site dist/client",
+		"postbuild": "pagefind --site dist",
 		"lint": "biome check .",
 		"lint:fix": "biome check --write ."
 	},
 	"dependencies": {
 		"@astrojs/mdx": "^4.3.13",
-		"@astrojs/node": "^9.5.1",
 		"@astrojs/sitemap": "^3.6.0",
 		"@iconify-json/lucide": "^1.2.20",
 		"@iconify-json/simple-icons": "^1.2.18",
