@@ -50,7 +50,7 @@ A minimalist, terminal-inspired personal website built with **Astro 5** and the 
 
 ## Project Structure
 
-\`\`\`
+```
 src/
 ├── assets/              # Images, fonts
 ├── components/          # Reusable Astro components
@@ -69,7 +69,7 @@ src/
 ├── styles/             # Global CSS
 ├── content.config.ts   # Content schemas (Zod)
 └── ec-theme.ts         # Expressive Code theme
-\`\`\`
+```
 
 ---
 
@@ -82,7 +82,7 @@ src/
 
 ### Installation
 
-\`\`\`bash
+```bash
 # Clone repository
 git clone git@github.com:YOUR_USERNAME/devnose.git
 cd devnose
@@ -92,16 +92,16 @@ pnpm install
 
 # Start dev server
 pnpm dev
-\`\`\`
+```
 
 Dev server: \`http://localhost:4321\`
 
 ### Build for Production
 
-\`\`\`bash
+```bash
 pnpm build
 pnpm preview
-\`\`\`
+```
 
 ---
 
@@ -111,7 +111,7 @@ pnpm preview
 
 Create files in \`src/content/posts/\`:
 
-\`\`\`mdx
+```mdx
 ---
 title: "My First Post"
 description: "A short description"
@@ -123,13 +123,13 @@ draft: false
 # Content in Markdown/MDX
 
 Your article here...
-\`\`\`
+```
 
 ### Projects
 
 Create files in \`src/content/projects/\`:
 
-\`\`\`mdx
+```mdx
 ---
 title: "My Project"
 description: "Project description"
@@ -141,7 +141,7 @@ info:
 ---
 
 Project details...
-\`\`\`
+```
 
 ### Update Content Data
 
@@ -160,38 +160,38 @@ No \`git-flow\` tool — commands done manually on Fedora.
 
 ### Create Feature Branch
 
-\`\`\`bash
+```bash
 git checkout develop
 git pull origin develop
 git checkout -b feature/feature-name
-\`\`\`
+```
 
 ### Commit Convention
 
-\`\`\`
+```
 feat(scope): add new feature
 fix(scope): resolve bug
 docs(scope): update documentation
-\`\`\`
+```
 
 ### Merge Back
 
-\`\`\`bash
+```bash
 git push origin feature/feature-name
 # Create PR on GitHub
 # Review → Merge → Delete branch
-\`\`\`
+```
 
 ### Release
 
-\`\`\`bash
+```bash
 # Develop → Main
 git checkout main
 git pull origin main
 git merge --no-ff develop
 git push origin main
 # Auto-deploy via Netlify
-\`\`\`
+```
 
 ---
 
@@ -214,13 +214,13 @@ Site automatically deploys on push to \`main\`.
 
 ## Scripts
 
-\`\`\`bash
+```bash
 pnpm dev       # Start dev server
 pnpm build     # Build for production
 pnpm preview   # Preview built site locally
 pnpm lint      # Check code with Biome
 pnpm lint:fix  # Auto-fix linting issues
-\`\`\`
+```
 
 ---
 
@@ -230,14 +230,14 @@ pnpm lint:fix  # Auto-fix linting issues
 
 Edit \`src/styles/globals.css\` for CSS variables:
 
-\`\`\`css
+```css
 :root {
   --primary: #7fdbca;    /* Teal */
   --secondary: #c792ea;  /* Purple */
   --bg: #011627;         /* Dark Navy */
   --fg: #d6deeb;         /* Light */
 }
-\`\`\`
+```
 
 See [Design System](./docs/DESIGN_SYSTEM.md) for full palette.
 
