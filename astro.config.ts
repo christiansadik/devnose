@@ -17,6 +17,7 @@ const config = defineConfig({
 		sitemap(),
 		spectre({
 			name: 'devnose',
+			giscus: false,
 			openGraph: {
 				home: {
 					title: 'devnose — Christian Sadik',
