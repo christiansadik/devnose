@@ -156,42 +156,36 @@ Edit JSON files in \`src/content/\`:
 
 ## Git Workflow (Git Flow Manual)
 
-No \`git-flow\` tool — commands done manually on Fedora.
+**See [CONTRIBUTING.md](./CONTRIBUTING.md) for complete branching strategy & commit conventions.**
 
-### Create Feature Branch
+Branch structure:
+- `master` — Production (auto-deploy via Netlify)
+- `develop` — Staging/integration
+- `feature/*` — Feature development
+- `fix/*` — Bug fixes
+- `hotfix/*` — Critical production fixes
+
+Quick start:
 
 ```bash
+# Feature development
 git checkout develop
 git pull origin develop
-git checkout -b feature/feature-name
+git checkout -b feature/DVN-XX-description
+# ... make changes ...
+git commit -m "feat(scope): description"
+git push -u origin feature/DVN-XX-description
+# Create PR on GitHub → Review → Merge → Delete branch
 ```
 
-### Commit Convention
-
+All commits follow [Conventional Commits](https://www.conventionalcommits.org/):
 ```
-feat(scope): add new feature
-fix(scope): resolve bug
-docs(scope): update documentation
-```
+<type>(<scope>): <description>
 
-### Merge Back
-
-```bash
-git push origin feature/feature-name
-# Create PR on GitHub
-# Review → Merge → Delete branch
+feat, fix, docs, style, refactor, perf, test, chore, ci
 ```
 
-### Release
-
-```bash
-# Develop → Main
-git checkout main
-git pull origin main
-git merge --no-ff develop
-git push origin main
-# Auto-deploy via Netlify
-```
+**Deployment:** Push to `master` → Auto-deploy to production via Netlify
 
 ---
 
