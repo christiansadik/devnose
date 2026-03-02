@@ -111,6 +111,18 @@ Keep suppress comments minimal; fix root causes when possible.
 4. Follow conventional commit messages (lowercase, present tense)
 5. Keep commits focused and atomic
 
+## Branching Strategy
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for complete guidelines.
+
+**Git Flow (manual):**
+- Branch from `develop` for features/fixes: `feature/DVN-XX-*` or `fix/DVN-XX-*`
+- Use [Conventional Commits](https://www.conventionalcommits.org/): `type(scope): description`
+- Create PR, get review, merge, delete branch
+- Merge to `master` only for releases (auto-deploys via Netlify)
+
+**Commit types:** `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `chore`, `ci`
+
 ## Key Dependencies
 
 - **Astro 5.16.6** – Static site generator with SSR support
