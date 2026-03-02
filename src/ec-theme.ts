@@ -1,19 +1,19 @@
-import githubDark from '@shikijs/themes/github-dark';
+import nightOwl from '@shikijs/themes/night-owl';
 import type { ThemeRegistration } from 'shiki';
 
 const spectreDark: ThemeRegistration = {
-	...githubDark,
+	...nightOwl,
 	name: 'Spectre Dark',
 	colors: {
-		...githubDark.colors,
-		'activityBar.background': '#303030',
-		'editor.background': '#202020',
-		'statusBar.background': '#303030',
-		'statusBarItem.remoteBackground': '#303030',
-		'tab.activeBackground': '#303030',
-		'titleBar.activeBackground': '#303030',
-		'editorGroupHeader.tabsBackground': '#282828',
-		'panel.background': '#202020',
+		...nightOwl.colors,
+		'activityBar.background': '#01111d',
+		'editor.background': '#011627',
+		'statusBar.background': '#01111d',
+		'statusBarItem.remoteBackground': '#01111d',
+		'tab.activeBackground': '#01111d',
+		'titleBar.activeBackground': '#01111d',
+		'editorGroupHeader.tabsBackground': '#00090f',
+		'panel.background': '#011627',
 	},
 };
 

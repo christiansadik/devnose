@@ -24,7 +24,7 @@
 
 html {
 	color-scheme: dark;
-	background-color: #0b0b0b;
+	background-color: var(--bg);
 }
 
 html,
@@ -83,7 +83,7 @@ code {
 }
 
 pre {
-	border: 1px solid rgb(#353535);
+	border: 1px solid var(--border);
 	overflow-y: hidden;
 	padding: 0.5rem;
 	border-radius: 0.25rem;

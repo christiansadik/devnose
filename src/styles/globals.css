@@ -1,10 +1,23 @@
 :root {
-	--primary: #8c5cf5;
-	/* Needed for some hover effects. This is just the R, G and B values of the hex color above */
-	--primary-rgb: 140, 92, 245;
-	/* Used for links */
-	--primary-light: #a277ff;
-	--primary-lightest: #c2a8fd;
+	/* Primary / Accent Colors */
+	--primary: #82aaff;
+	--primary-rgb: 130, 170, 255;
+	--primary-light: #9ab8ff;
+	--primary-lightest: #bdd0ff;
+
+	/* Backgrounds */
+	--bg: #011627;
+	--bg-card: #01111d;
+	--bg-card-hover: #00090f;
+
+	/* Borders & Separators */
+	--border: #0b2942;
+	--border-hover: #1a4060;
+
+	/* Text Colors */
+	--text: #d6deeb;
+	--text-muted: #7fdbca;
+	--text-faint: #4b6479;
 }
 
 .overview-list {
@@ -94,8 +107,8 @@ main {
 	flex-direction: column;
 	gap: 1rem;
 	padding: 1rem;
-	border: 1px solid #353535;
-	color: #ffffff;
+	border: 1px solid var(--border);
+	color: var(--text);
 	text-decoration: none;
 	transition:
 		background-color 0.15s ease,
@@ -106,7 +119,7 @@ main {
 .post-container:focus-visible {
 	background-color: rgba(var(--primary-rgb), 0.125);
 	border: 1px solid var(--primary);
-	color: white;
+	color: var(--text);
 	text-decoration: none;
 }
 
@@ -125,7 +138,7 @@ main {
 }
 
 .post-date {
-	color: #c7c7c7;
+	color: var(--text-muted);
 }
 
 .text-glow {

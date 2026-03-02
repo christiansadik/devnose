@@ -96,4 +96,13 @@ const projects = defineCollection({
 		}),
 });
 
-export const collections = { tags, posts, projects, other, quickInfo, socials, skills, workExperience };
+export const collections = {
+	tags,
+	posts,
+	projects,
+	other,
+	quickInfo,
+	socials,
+	skills,
+	workExperience,
+};
