@@ -1,6 +1,14 @@
-/* ! Modified from Night Owl theme
- * Adapted from GitHub's primer/primitives structure
- * Night Owl color palette mapping
+/*!
+ * Derived from GitHub Primer Primitives (MIT License)
+ * Copyright (c) GitHub, Inc.
+ * https://github.com/primer/primitives
+ * https://github.com/primer/primitives/blob/main/LICENSE
+ *
+ * Color palette inspired by the Night Owl theme (MIT License)
+ * Copyright (c) Sarah Drasner
+ * https://github.com/sdras/night-owl-vscode-theme
+ *
+ * Local modifications have been made for this project.
  */
 main {
 	--color-prettylights-syntax-comment: #637777;
