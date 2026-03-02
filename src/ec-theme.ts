@@ -1,6 +1,8 @@
 import nightOwl from '@shikijs/themes/night-owl';
 import type { ThemeRegistration } from 'shiki';
 
+// NOTE: This theme is based on Night Owl but intentionally keeps the "Spectre Dark"
+// name for user-facing consistency and backward compatibility.
 const spectreDark: ThemeRegistration = {
 	...nightOwl,
 	name: 'Spectre Dark',
