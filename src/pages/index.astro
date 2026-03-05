@@ -1,24 +1,23 @@
 ---
-import "../styles/index.css";
+import '../styles/index.css';
 
-import { getCollection, getEntry, render } from "astro:content";
-import { name, openGraph } from "spectre:globals";
-import ProfilePicture from "../assets/pfp.png";
-import Card from "../components/Card.astro";
-import Icon from "../components/Icon.astro";
-import ImageGlow from "../components/ImageGlow.astro";
-import Layout from "../layouts/Layout.astro";
+import { getCollection, getEntry, render } from 'astro:content';
+import { name, openGraph } from 'spectre:globals';
+import ProfilePicture from '../assets/pfp.png';
+import Card from '../components/Card.astro';
+import Icon from '../components/Icon.astro';
+import ImageGlow from '../components/ImageGlow.astro';
+import Layout from '../layouts/Layout.astro';
 
-const [posts, projects, about, workExperience, quickInfo, socials, skills] =
-  await Promise.all([
-    getCollection("posts"),
-    getCollection("projects"),
-    getEntry("other", "about"),
-    getCollection("workExperience"),
-    getCollection("quickInfo"),
-    getCollection("socials"),
-    getCollection("skills"),
-  ]);
+const [posts, projects, about, workExperience, quickInfo, socials, skills] = await Promise.all([
+	getCollection('posts'),
+	getCollection('projects'),
+	getEntry('other', 'about'),
+	getCollection('workExperience'),
+	getCollection('quickInfo'),
+	getCollection('socials'),
+	getCollection('skills'),
+]);
 
 const { Content: About } = await render(about!);
 ---
@@ -93,7 +92,9 @@ const { Content: About } = await render(about!);
                 width={32}
                 height={32}
                 class="glow-icon"
+                aria-hidden="true"
               />
+              <span class="sr-only">{skill.data.text}</span>
             </li>
           ))
         }

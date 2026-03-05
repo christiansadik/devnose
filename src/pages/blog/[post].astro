@@ -6,6 +6,7 @@ import { getCollection, render } from 'astro:content';
 import { giscus } from 'spectre:globals';
 import type { GetStaticPaths } from 'astro';
 import Card from '../../components/Card.astro';
+import ImageGlow from '../../components/ImageGlow.astro';
 import Layout from '../../layouts/Layout.astro';
 
 /**
@@ -46,6 +47,7 @@ const { Content, headings } = await render(post);
 <Layout
   title={post.data.title}
   description={post.data.description}
+  image={post.data.image}
   article={{
     createdAt: post.data.createdAt,
   }}
@@ -68,6 +70,7 @@ const { Content, headings } = await render(post);
   <article slot="right" data-pagefind-body>
     <Card>
       <div class="article-header" id="_top" data-pagefind-ignore>
+        {post.data.image && <ImageGlow quality={100} class="article-image" src={post.data.image} alt={post.data.title} />}
         <div class="header">
           <div>
             <h1 class="no-mt article-h1">{post.data.title}</h1>

@@ -65,12 +65,14 @@ const tags = defineCollection({
 
 const posts = defineCollection({
 	loader: glob({ base: 'src/content/posts', pattern: '**/*.{md,mdx}' }),
-	schema: z.object({
-		title: z.string(),
-		createdAt: z.coerce.date(),
-		description: z.string(),
-		tags: z.array(reference('tags')),
-	}),
+	schema: ({ image }) =>
+		z.object({
+			title: z.string(),
+			createdAt: z.coerce.date(),
+			description: z.string(),
+			tags: z.array(reference('tags')),
+			image: image().optional(),
+		}),
 });
 
 const projects = defineCollection({
